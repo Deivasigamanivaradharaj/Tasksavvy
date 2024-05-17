@@ -1,0 +1,116 @@
+.MemberProfile{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    overflow: hidden;
+}
+.MemberProfile .header{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.MemberProfile .header p{
+    color: gray;
+}
+.MemberProfile .header p span:hover{
+    color: blue;
+    font-weight: 600;
+    cursor: pointer;
+}
+.MemberProfile .header button{
+    border-radius: 5px;
+    background: none;
+    padding: 5px 10px;
+    border: 1px solid rgb(204, 204, 204);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 17px;
+}
+.MemberProfile .topcontainer{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    gap: 70px;
+    border-bottom: 1px solid #ddd;
+}
+.MemberProfile .topcontainer .profileimage{
+    object-fit: cover;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: flex;
+    background: linen;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.MemberProfile .topcontainer .infocontainer{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 17px;
+    gap: 20px;
+}
+.MemberProfile .topcontainer .infocontainer1{
+    width: 17%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+}
+.MemberProfile .topcontainer .infocontainer .infogroup{
+    display: flex;
+    width: 100%;
+}
+.MemberProfile .topcontainer .infocontainer .infogroup p{
+    width: 50%;
+    text-align: start;
+}
+.MemberProfile .topcontainer .infocontainer .infogroup label{
+    width: 50%;
+}
+.MemberProfile .navbar{
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+}
+.MemberProfile .navbar .navitem{
+    color: black;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 19px;
+    cursor: pointer;
+    width: 15%;
+    justify-content: center;
+}
+.MemberProfile .navbar .active{
+    color: blue;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 19px;
+    border-bottom: 3px solid blue;
+}
+.MemberProfile .bottomcontainer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+}
+.MemberProfile .bottomcontainer .task{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: red;
+}

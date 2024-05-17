@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poetsen+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  /* font-size: 17px; */
+}
+
+/* width */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 140, 255); 
+}
+
+.LoginContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: rgb(45, 45, 45);
+}
+
+.LoginContainer form{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: fit-content;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.LoginContainer form h1{
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.LoginContainer form label{
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.LoginContainer form input{
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.LoginContainer form .submit-btn{
+  width: fit-content;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  background: blue;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.HomeContainer{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.Sidebar{
+  width: 19%;
+  height: 100%;
+  border-right: 1px solid rgb(197, 197, 197);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Sidebar .logo{
+  display: flex;
+  align-self: center;
+  padding-top: 10px;
+}
+.Sidebar .logo img{
+  height: 40px;
+  width: 40px;
+}
+.Sidebar .links{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+.Sidebar .links li{
+  padding: 20px 0px 20px 70px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.Sidebar .links .active{
+  background: rgb(0, 106, 255);
+  color: white;
+}
+.Sidebar .links li:hover{
+  background: rgb(0, 106, 255);
+  color: white;
+}
+
+.MainContent{
+  width:81%;
+  height: 100%;
+}
+
+.MainContent .Header{
+  height: 70px;
+  width: calc(100% - 40px);
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;  
+}
+
+.MainContent .Header button{
+  padding: 10px 20px;
+  color: white;
+  font-weight: 600;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.main{
+  height: calc(100vh - 90px);
+  overflow: scroll;
+  padding: 10px;
+}
+
+.swal2-html-container{
+  display: flex !important;
+  text-align: start;
+}
+.swal2-html-container .labelcontainer{
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  gap: 10px;
+  align-items: start;
+  margin-right: 20px;
+}
+.swal2-html-container .inputcontainer{
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  gap: 10px;
+  align-items: start;
+  max-width: 70%;
+}
+.desc{
+  text-align: left;
+  height: max-content;
+}
+.swal2-html-container label{
+  height: 2rem !important;
+  display: flex;
+  align-items: center;
+}
+.swal2-input{
+  height: 2rem !important;
+  margin: 0px;
+  width: 100% !important;
+}
+.swal2-select{
+  height: 2rem !important;
+  border: 1px solid #d9d9d9;
+  border-radius: .1875em;
+  margin: 0px;
+  padding: 0rem .625em !important;
+  width: 100% !important;
+}
+
+.rbc-event{
+  background: none !important;
+}
+
+.mytasks{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: calc(100vh - 110px);
+  min-height: calc(100vh - 130px);
+  gap: 20px;
+}
+.mytasks .taskcategory{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.mytasks .taskcategory .categorybox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+.mytasks .taskcategory .categorybox svg{
+  font-size: 50px;
+}
+.mytasks table{
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-collapse: collapse; 
+}
+.mytasks table th{
+  padding: 10px 10px;
+  color: rgb(0, 0, 0, .6);
+  border-bottom: .1px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.mytasks table td{
+  padding: 10px 10px;
+  font-weight: 600;
+}
+
+.mytasks table .tablehead:hover{
+  background: white !important;
+}
+
+.mytasks table tr:hover{
+  outline: none;
+  background: rgb(0, 0, 0, .2);
+}
